@@ -1,0 +1,74 @@
+<header class="container">
+  <div class="row py-3">
+    <div class="col">
+      <img src="assets/img/logo.png" class="img-responsive">
+    </div>
+    <div class="col text-right">
+      <a href="#">
+        <i class="fas fa-bars fa-2x"></i>
+      </a>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <h1 class="text-center my-4">
+    {{ title }}!
+  </h1>
+  <div class="clearfix"></div>
+  <div class="f1-steps text-center">
+    <div class="f1-progress">
+      <div class="f1-progress-line" data-now-value="25" data-number-of-steps="2" style="width: 25%;"></div>
+    </div>
+    <div class="f1-step active">
+      <div class="f1-step-icon">
+        <i class="fas fa-user"></i>
+      </div>
+      <p>1. Sus datos</p>
+    </div>
+    <div class="f1-step">
+      <div class="f1-step-icon">
+        <i class="fas fa-ticket-alt"></i>
+      </div>
+      <p>2. Elige su plan</p>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+  <div class="contenido p-4 rounded">
+    <div id="paso1" class="paso1">
+      <div class="row">
+        <div class="col-md">
+          <div class="form-group">
+            <label for="destino">Su destino:</label>
+            <input type="text" class="form-control" id="destino" placeholder="Busque la ciudad o país de destino..." (keyup)="onNameKeyUp($event)">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-group">
+            <label for="cantidad_pasajeros">Número de pasajeros:</label>
+            <input type="number" class="form-control" id="cantidad_pasajeros" placeholder="0" max="10">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="form-group">
+            <label for="fecha_partida">Fecha de partida:</label>
+            <input type="date" class="form-control" id="fecha_partida">
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-group">
+            <label for="fecha_retorno">Fecha de retorno:</label>
+            <input type="date" class="form-control" id="fecha_retorno">
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+          <button (click)="getDestinos()" class="btn btn-primary d-block">Cotizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

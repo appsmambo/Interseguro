@@ -29,7 +29,7 @@
       <div class="f1-step-icon">
         <i class="fas fa-ticket-alt"></i>
       </div>
-      <p>2. Elige su plan</p>
+      <p>2. Eliga su plan</p>
     </div>
     <div class="col">
     </div>
@@ -40,7 +40,7 @@
         <div class="col-md">
           <div class="form-group">
             <label for="destino">Su destino:</label>
-            <input type="text" class="form-control" id="destino" placeholder="Busque la ciudad o país de destino..." (keyup)="onNameKeyUp($event)">
+            <input type="text" class="form-control" id="destino" placeholder="Busque la ciudad o país de destino..." (keyup)="onNameKeyUp($event)" [class.is-invalid]="searchFailed" [(ngModel)]="model" [ngbTypeahead]="search" [inputFormatter]="formatter_">
           </div>
         </div>
         <div class="col-md">

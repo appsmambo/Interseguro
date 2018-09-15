@@ -1,15 +1,15 @@
 {
   "destinos": [
-    {"destino": "BGF - Bangui, Central African Republic"},
-    {"destino": "BGR - Bangor, ME, USA - Bangor International Airport"},
-    {"destino": "BKK - Bangkok, Thailand - Bangkok International Airport"},
-    {"destino": "BLR - Bangalore, India - Hindustan"},
-    {"destino": "CGP - Chittapomg, Bangladesh - Patenga"},
-    {"destino": "DAC - Dhaka, Bangladesh - Zia International Airport"},
-    {"destino": "KUL - Kuala Lumpur, Malaysia - Subang Kuala Lumpur International"},
-    {"destino": "LMN - Limbag, Sarawak, Malaysia - Limbang"},
-    {"destino": "PLM - Palembang, Indonesia - Sultan Mahmud Badaruddin Ii"},
-    {"destino": "SPD - Saidpur, Bangladesh"},
-    {"destino": "LIM - Lima, Perú, Jorge Chavez"}
+    {"id": 1, "pais": "Bangui", "name": "BGF - Bangui, Central African Republic"},
+    {"id": 2, "pais": "USA", "name": "BGR - Bangor, ME, USA - Bangor International Airport"},
+    {"id": 3, "pais": "Thailand", "name": "BKK - Bangkok, Thailand - Bangkok International Airport"},
+    {"id": 4, "pais": "India", "name": "BLR - Bangalore, India - Hindustan"},
+    {"id": 5, "pais": "Bangladesh", "name": "CGP - Chittapomg, Bangladesh - Patenga"},
+    {"id": 6, "pais": "Bangladesh", "name": "DAC - Dhaka, Bangladesh - Zia International Airport"},
+    {"id": 7, "pais": "Malaysia", "name": "KUL - Kuala Lumpur, Malaysia - Subang Kuala Lumpur International"},
+    {"id": 8, "pais": "Malaysia", "name": "LMN - Limbag, Sarawak, Malaysia - Limbang"},
+    {"id": 9, "pais": "Indonesia", "name": "PLM - Palembang, Indonesia - Sultan Mahmud Badaruddin Ii"},
+    {"id": 10, "pais": "Bangladesh", "name": "SPD - Saidpur, Bangladesh"},
+    {"id": 11, "pais": "Peru", "name": "LIM - Lima, Perú, Jorge Chavez"}
   ]
 }

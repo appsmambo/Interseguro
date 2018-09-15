@@ -1,13 +1,13 @@
-{
-  "destino": "BGF - Bangui, Central African Republic",
-  "destino": "BGR - Bangor, ME, USA - Bangor International Airport",
-  "destino": "BKK - Bangkok, Thailand - Bangkok International Airport",
-  "destino": "BLR - Bangalore, India - Hindustan",
-  "destino": "CGP - Chittapomg, Bangladesh - Patenga",
-  "destino": "DAC - Dhaka, Bangladesh - Zia International Airport",
-  "destino": "KUL - Kuala Lumpur, Malaysia - Subang Kuala Lumpur International",
-  "destino": "LMN - Limbag, Sarawak, Malaysia - Limbang",
-  "destino": "PLM - Palembang, Indonesia - Sultan Mahmud Badaruddin Ii",
-  "destino": "SPD - Saidpur, Bangladesh",
-  "destino": "LIM - Lima, Perú, Jorge Chavez"
-}
+[
+  {"destino": "BGF - Bangui, Central African Republic"},
+  {"destino": "BGR - Bangor, ME, USA - Bangor International Airport"},
+  {"destino": "BKK - Bangkok, Thailand - Bangkok International Airport"},
+  {"destino": "BLR - Bangalore, India - Hindustan"},
+  {"destino": "CGP - Chittapomg, Bangladesh - Patenga"},
+  {"destino": "DAC - Dhaka, Bangladesh - Zia International Airport"},
+  {"destino": "KUL - Kuala Lumpur, Malaysia - Subang Kuala Lumpur International"},
+  {"destino": "LMN - Limbag, Sarawak, Malaysia - Limbang"},
+  {"destino": "PLM - Palembang, Indonesia - Sultan Mahmud Badaruddin Ii"},
+  {"destino": "SPD - Saidpur, Bangladesh"},
+  {"destino": "LIM - Lima, Perú, Jorge Chavez"}
+]

@@ -2,29 +2,43 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
-
-const misDestinos = ['Lima', 'India', 'Estados Unidos', 'USA', 'Colombia'];
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
+});
 
 export class AppComponent {
   //public model: any;
   title = 'Cotizador de seguro de viajes';
-  destino = '';
-  timerid = 0;
-  slash = '/';
-  dataDestinos = [];
-  configServicios = {
-    'destinos':'https://testsoat.interseguro.com.pe/talentfestapi/destinos',
-    'destinosTemp':'https://my-json-server.typicode.com/appsmambo/dataInterseguro3/destinos/?pais=',
-    'cotizacion':'https://testsoat.interseguro.com.pe/talentfestapi/cotizacion'
-  };
 
-  constructor(private httpClient:HttpClient){}
+  public ngOnInit() {
+    $(document).ready(function() {
+      timerid = 0;
+      destino = '';
+      slash = '/';
+      dataDestinos = [];
+      configServicios = {
+        'destinos':'https://testsoat.interseguro.com.pe/talentfestapi/destinos',
+        'destinosTemp':'https://my-json-server.typicode.com/appsmambo/dataInterseguro3/destinos/?pais=',
+        'cotizacion':'https://testsoat.interseguro.com.pe/talentfestapi/cotizacion'
+      };
+      $('#destino').on("input", function(e) {
+        c = $(this);
+        destino = c.value();
+        if (c.data('last') != destino) {
+          c.data('last', destino);
+          clearTimeout(timerid);
+          timerid = setTimeout(function() {
+            //$('#buscarColegio').addClass('loading');
+            console.log(configServicios.destinosTemp);
+          },500);
+        }
+      });
+    });
+  }
 
   onNameKeyUp(event:any) {
     var c = this;
